@@ -165,8 +165,6 @@ startupup
 printOptions
 fi
 
-fi
-
 if [ $Opt = 2 ]
 then
 echo "Setting selected interface to down" | lolcat --spread 1.0
