@@ -172,6 +172,7 @@ echo "Setting selected interface to down" | lolcat --spread 1.0
 sudo ifconfig $interface down
 clear
 startup
+printOptions
 fi
 
 if [ $Opt = 3 ]
@@ -183,6 +184,7 @@ sleep 5
 sudo macchanger --mac=$Mac $interface
 clear
 startup
+printOptions
 fi
 
 if [ $Opt = 4 ]
@@ -190,6 +192,7 @@ then
 sudo ifconfig $interface up
 clear
 startup
+printOptions
 fi
 
 if  [[ "$Opt" != '4' ]] && [[ "$Opt" != '3' ]] && [[ "$Opt" != '2' ]] && [[ "$Opt" != '1' ]];
