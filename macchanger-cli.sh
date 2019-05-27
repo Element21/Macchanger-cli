@@ -8,7 +8,7 @@ printOptions() {
 read -p "Option Number?: " Opt
 }
 
-startupup() {
+startup() {
 echo '
     __  ___                __
    /  |/  /___ ___________/ /_  ____ _____  ____ ____  _____
@@ -26,7 +26,7 @@ echo '[4]. Set Interface Up' | lolcat --spread 1.0
 echo ''
 }
 
-startupup
+startup
 sleep 0.5
 printOptions
 
@@ -62,7 +62,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[0]}
 clear
-startupup
+startup
 printOptions
 fi
 
@@ -73,7 +73,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[1]}
 clear
-startupup
+startup
 printOptions
 fi
 
@@ -84,7 +84,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[2]}
 clear
-startupup
+startup
 printOptions
 fi
 
@@ -95,7 +95,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[3]}
 clear
-startupup
+startup
 printOptions
 fi
 
@@ -106,7 +106,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[4]}
 clear
-startupup
+startup
 printOptions
 fi
 
@@ -117,7 +117,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[5]}
 clear
-startupup
+startup
 printOptions
 fi
 
@@ -128,7 +128,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[6]}
 clear
-startupup
+startup
 printOptions
 fi
 
@@ -161,8 +161,9 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[9]}
 clear
-startupup
+startup
 printOptions
+fi
 fi
 
 if [ $Opt = 2 ]
