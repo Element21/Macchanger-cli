@@ -121,6 +121,50 @@ startup
 printOptions
 fi
 
+if [ $ifaceOpt = 7 ]
+then
+echo "Interface 7 Selected!"  | lolcat --spread 1.0
+echo "Setting interface selected..." | lolcat --spread 1.0
+sleep 1
+interface=${ifaces[6]}
+clear
+startup
+printOptions
+fi
+
+if [ $ifaceOpt = 8 ]
+then
+echo "Interface 8 Selected!"  | lolcat --spread 1.0
+echo "Setting interface selected..." | lolcat --spread 1.0
+sleep 1
+interface=${ifaces[7]}
+clear
+startup
+printOptions
+fi
+
+if [ $ifaceOpt = 9 ]
+then
+echo "Interface 9 Selected!"  | lolcat --spread 1.0
+echo "Setting interface selected..." | lolcat --spread 1.0
+sleep 1
+interface=${ifaces[8]}
+clear
+startup
+printOptions
+fi
+
+if [ $ifaceOpt = 10 ]
+then
+echo "Interface 10 Selected! (You have a lot of interfaces!!)"  | lolcat --spread 1.0
+echo "Setting interface selected..." | lolcat --spread 1.0
+sleep 1
+interface=${ifaces[9]}
+clear
+startup
+printOptions
+fi
+
 fi
 
 if [ $Opt = 2 ]
