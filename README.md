@@ -11,7 +11,7 @@ A nice little bash script that does all the necessary things to change your mac 
 
 ## Installation
 
-#### Firs, we have to cd into the right directory!
+#### First, we have to cd into the right directory!
 ```console
 foo@bar:~$ cd Macchanger-cli
 foo@bar:~/Macchanger-cli$
