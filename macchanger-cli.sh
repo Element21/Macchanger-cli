@@ -8,7 +8,7 @@ printOptions() {
 read -p "Option Number?: " Opt
 }
 
-startup() {
+startupup() {
 echo '
     __  ___                __
    /  |/  /___ ___________/ /_  ____ _____  ____ ____  _____
@@ -26,7 +26,7 @@ echo '[4]. Set Interface Up' | lolcat --spread 1.0
 echo ''
 }
 
-startup
+startupup
 sleep 0.5
 printOptions
 
@@ -62,7 +62,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[0]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -73,7 +73,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[1]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -84,7 +84,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[2]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -95,7 +95,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[3]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -106,7 +106,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[4]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -117,7 +117,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[5]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -128,7 +128,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[6]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -139,7 +139,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[7]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -150,7 +150,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[8]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -161,7 +161,7 @@ echo "Setting interface selected..." | lolcat --spread 1.0
 sleep 1
 interface=${ifaces[9]}
 clear
-startup
+startupup
 printOptions
 fi
 
@@ -172,7 +172,7 @@ then
 echo "Setting selected interface to down" | lolcat --spread 1.0
 sudo ifconfig $interface down
 clear
-start
+startup
 fi
 
 if [ $Opt = 3 ]
@@ -183,14 +183,14 @@ echo "Setting Mac..." | lolcat --spread 1.0
 sleep 5
 sudo macchanger --mac=$Mac $interface
 clear
-start
+startup
 fi
 
 if [ $Opt = 4 ]
 then
 sudo ifconfig $interface up
 clear
-start
+startup
 fi
 
 if  [[ "$Opt" != '4' ]] && [[ "$Opt" != '3' ]] && [[ "$Opt" != '2' ]] && [[ "$Opt" != '1' ]];
