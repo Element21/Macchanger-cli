@@ -22,7 +22,7 @@ foo@bar:~/Macchanger-cli$
 ```console
 foo@bar:~$ sudo apt install -y lolcat macchanger net-tools
 ```
-#### Next, we have to make the file exacutable.
+#### Next, we have to make the file executable.
 ```console
 foo@bar:~/Macchanger-cli$ chmod +x macchanger-cli.sh
 ```
