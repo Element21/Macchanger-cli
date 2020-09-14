@@ -164,7 +164,6 @@ clear
 startup
 printOptions
 fi
-fi
 
 if [ $Opt = 2 ]
 then
